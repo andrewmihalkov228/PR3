@@ -14,6 +14,7 @@
         {
             b = value;
         }
+<<<<<<< HEAD
 
 
         public double Add()
@@ -28,6 +29,12 @@
         }
 
 
+=======
+        public double Multiply()
+        {
+            return a * b;
+        }
+>>>>>>> umnojit
     }
 
     class Program
@@ -41,11 +48,15 @@
                 Console.WriteLine("Меню:");
                 Console.WriteLine("1. Ввести А");
                 Console.WriteLine("2. Ввести В");
+<<<<<<< HEAD
 
                 Console.WriteLine("3. Выполнить операцию \"+\"");
 
                 Console.WriteLine("4. Выполнить операцию \"-\"");
 
+=======
+                Console.WriteLine("5. Выполнить операцию \"*\"");
+>>>>>>> umnojit
                 Console.WriteLine("0. Выход");
 
                 Console.Write("Выберите пункт меню: ");
@@ -63,12 +74,18 @@
                         double b = Convert.ToDouble(Console.ReadLine());
                         calculator.SetB(b);
                         break;
+<<<<<<< HEAD
                     case "3":
                         double sum = calculator.Add();
                         Console.WriteLine("Результат: " + sum);
                     case "4":
                         double difference = calculator.Subtract();
                         Console.WriteLine("Результат: " + difference);
+=======
+                    case "5":
+                        double product = calculator.Multiply();
+                        Console.WriteLine("Результат: " + product);
+>>>>>>> umnojit
                         break;
                     case "0":
                         Console.WriteLine("Выход из программы.");
