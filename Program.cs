@@ -14,9 +14,6 @@
         {
             b = value;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 
         public double Add()
         {
@@ -29,14 +26,11 @@
             return a - b;
         }
 
-
-=======
         public double Multiply()
         {
             return a * b;
         }
->>>>>>> umnojit
-=======
+
         public double Divide()
         {
             if (b != 0)
@@ -49,7 +43,6 @@
                 return 0;
             }
         }
->>>>>>> delit
     }
 
     class Program
@@ -63,19 +56,15 @@
                 Console.WriteLine("Меню:");
                 Console.WriteLine("1. Ввести А");
                 Console.WriteLine("2. Ввести В");
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                 Console.WriteLine("3. Выполнить операцию \"+\"");
 
                 Console.WriteLine("4. Выполнить операцию \"-\"");
 
-=======
                 Console.WriteLine("5. Выполнить операцию \"*\"");
->>>>>>> umnojit
-=======
+
                 Console.WriteLine("6. Выполнить операцию \"/\"");
->>>>>>> delit
+
                 Console.WriteLine("0. Выход");
 
                 Console.Write("Выберите пункт меню: ");
@@ -93,24 +82,21 @@
                         double b = Convert.ToDouble(Console.ReadLine());
                         calculator.SetB(b);
                         break;
-<<<<<<< HEAD
-<<<<<<< HEAD
                     case "3":
                         double sum = calculator.Add();
                         Console.WriteLine("Результат: " + sum);
+                        break;
                     case "4":
                         double difference = calculator.Subtract();
                         Console.WriteLine("Результат: " + difference);
-=======
+                        break;
                     case "5":
                         double product = calculator.Multiply();
                         Console.WriteLine("Результат: " + product);
->>>>>>> umnojit
-=======
+                        break;
                     case "6":
                         double quotient = calculator.Divide();
                         Console.WriteLine("Результат: " + quotient);
->>>>>>> delit
                         break;
                     case "0":
                         Console.WriteLine("Выход из программы.");
