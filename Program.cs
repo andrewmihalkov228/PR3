@@ -15,10 +15,19 @@
             b = value;
         }
 
+
         public double Add()
         {
             return a + b;
         }
+
+
+        public double Subtract()
+        {
+            return a - b;
+        }
+
+
     }
 
     class Program
@@ -32,7 +41,11 @@
                 Console.WriteLine("Меню:");
                 Console.WriteLine("1. Ввести А");
                 Console.WriteLine("2. Ввести В");
+
                 Console.WriteLine("3. Выполнить операцию \"+\"");
+
+                Console.WriteLine("4. Выполнить операцию \"-\"");
+
                 Console.WriteLine("0. Выход");
 
                 Console.Write("Выберите пункт меню: ");
@@ -53,6 +66,9 @@
                     case "3":
                         double sum = calculator.Add();
                         Console.WriteLine("Результат: " + sum);
+                    case "4":
+                        double difference = calculator.Subtract();
+                        Console.WriteLine("Результат: " + difference);
                         break;
                     case "0":
                         Console.WriteLine("Выход из программы.");
